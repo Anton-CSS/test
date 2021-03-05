@@ -1,0 +1,151 @@
+.news {
+  margin-bottom: 161px;
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 167px;
+    height: 35px;
+    border-radius: 17px;
+    border: 2px solid var(--color-russet);
+    color: var(--color-russet);
+    font-family: "MyriadPro";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 40px;
+    transition: all 0.3s linear;
+
+    &:hover {
+      border: none;
+      color: var(--color-dark);
+      background-color: var(--color-russet);
+    }
+  }
+  &__container {
+    padding-left: 67px;
+  }
+
+  &__title {
+    display: block;
+    color: var(--color-text);
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .big {
+    max-width: 489px;
+    margin-right: 105px;
+
+    img {
+      display: block;
+      width: 489px;
+      height: 305px;
+      margin-bottom: 25px;
+    }
+
+    &__time {
+      display: flex;
+      justify-content: space-between;
+      color: var(--color-lightgray);
+      margin-bottom: 8px;
+    }
+
+    &__title {
+      display: block;
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 15px;
+      color: var(--color-text)
+    }
+
+    p {
+      font-family: "MyriadPro";
+      font-weight: 300;
+      max-width: 484px;
+      line-height: 20px;
+      color: var(--color-text);
+      margin-bottom: 50px;
+    }
+  }
+
+  .caption {
+    color: #00aa4b;
+    font-weight: 300;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+
+    li {
+      display: block;
+      width: 100%;
+      max-width: 818px;
+      height: 100%;
+      margin-bottom: 45px;
+
+      a {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+          display: block;
+          width: 190px;
+          height: 168px;
+          margin-right: 20px;
+          object-fit: cover;
+        }
+
+        .list__des {
+          height: 100%;
+          max-width: 608px;
+
+          time {
+            display: block;
+            color: var(--color-lightgray);
+          }
+
+          .big__time {
+            margin-top: -4px;
+          }
+
+          .big__title {
+            line-height: 27px;
+            margin-bottom: 21px;
+          }
+
+          p {
+            color: var(--color-text);
+            font-family: "MyriadPro";
+            font-weight: 300;
+          }
+
+          &--two {
+            time {
+              margin-bottom: 7px;
+            }
+
+            .big__title {
+              margin-bottom: 18px;
+            }
+          }
+          &--three{
+            .big__time {
+              margin-top: -9px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

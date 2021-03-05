@@ -1,0 +1,200 @@
+.greeting{
+  max-height: 476px;
+  margin-bottom: 20px;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__slider{
+    position: relative;
+    width: 58%;
+    height: 476px;
+    margin-right: 21px;
+  }
+}
+
+.menu{
+  width: 37%;
+  max-width: 303px;
+  background-color: var(--color-white);
+  padding-top: 18px;
+  margin-right: 21px;
+  &__title{
+    color: var(--color-russet);
+    padding-left: 27px;
+    font-size: 24px;
+    line-height: 45px;
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 6px;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    height: 45px;
+    border-bottom: 1px solid rgba(#bababa, 0.25);
+    padding-left: 27px;
+    &:last-child{
+      border-bottom: none;
+    }
+    &:hover .menu__link {
+      color: var(--color-russet);
+      transition: color 0.3s linear;
+    }
+    &:hover .menu__link::after {
+      color: var(--color-russet); 
+      transition: color 0.3s linear;
+    }
+  }
+  &__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    color: var(--color-forlink);
+    font-family: "MyriadPro";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 45px;
+    transition: color 0.3s linear;
+    &::after{
+      content:'>';
+      position: absolute;
+      top: 50%;
+      right: 21px;
+      transform: translateY(-50%);
+      color: var(--color-forlink);
+      transition: color 0.3s linear;
+    }
+  }
+}
+.box{
+  position: relative;
+  height: 100%;
+  background-color: #232323;
+  padding-bottom: 115px;
+  &__caption {
+    padding-top: 56px;
+    padding-left: 65px;
+    color: var(--color-lightgray);
+    font-family: "MyriadPro";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    margin-bottom: 60px;
+  }
+  &__title {
+    padding-left: 65px;
+    max-width: 425px;
+    color: #f3f1f1;
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 61px;
+  }
+  &__subtitle{
+    display: block;
+    margin-top: 11px;
+    color: var(--color-white);
+    font-family: "MyriadPro";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+  &__btn {
+    margin-left: 65px;
+    padding: 7px 21px 7px;
+    border-radius: 18px;
+    background-color: var(--color-russet);
+    color: var(--color-white);
+    font-size: 18px;
+    line-height: 40px;
+    opacity: 1;
+    transition: opacity 0.3s linear;
+    &:hover{
+     opacity: 0.7;
+    }
+  }
+  &__img{
+    position: absolute;
+    top: 70px;
+    right: 82px;
+  }
+}
+.pagination__dot{
+  bottom: 32px !important;
+  .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    border: 1px solid var(--color-white);
+    background-color: transparent;
+    transition: background-color 0.2s linear;
+  }
+  .swiper-pagination-bullet-active{
+    background-color:var(--color-white);
+    transition: background-color 0.2s linear;
+  }
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+  margin: 0px 6px;
+}
+.advertisement{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 30px;
+  width: 28%;
+  border-radius: 2px;
+  border: 2px solid var(--color-russet);
+  background-color: var(--color-white);
+  &__link {
+    color: var(--color-russet);
+    font-family: "MyriadPro";
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 48px;
+    &::after{
+      content: '>';
+      margin-left: 10px;
+    }
+  }
+  &__title{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  &__img{
+    display: block;
+    width: 70px;
+    height: 86px;
+    object-fit: cover;
+    margin-bottom: 12px;
+  }
+  &__text{
+    margin-bottom: 2px;
+    color: #121212;
+    font-family: "MyriadPro";
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
+.greeting-mob{
+  display: none;
+  .greeting__slider{
+    width: 100%;
+  }
+  .box{
+    &__wpap{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-left: 2%;
+      width: 361px;
+      height: 245px;
+    }
+  }
+}
